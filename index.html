@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="centered">
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Celsius zu Fahrenheit</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="https://www.finanzen.net/waehrungsrechner/us-dollar_euro">Währungsumrechcner</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+        </div>
+    </header>
+    <p class="medium">
+    Willkommen auf meiner Homepage
+    <br>Geben Sie eine Zahl ein:
+</p>
+   <main>
+       <img src="img/thermometer%20C.png" width="200" height="70" alt="11x Thermometer, zeigt immer höhere Werte von links nach rechts " >
+        <img src="img/Fcc.jpg" width="90" HEIGHT="90" alt="Walking Cartoon mit Schal um den Hals (es ist kalt!)">
+   </main>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Celsius zu Fahrenheit</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="https://www.finanzen.net/waehrungsrechner/us-dollar_euro">Währungsumrechner</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content"><!-- Your content goes here -->
+
+            <form onsubmit="addCelsius">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="Cfield">
+                    <label class="mdl-textfield__label" for="Cfield">°C</label>
+                    <span class="mdl-textfield__error">Input is not a number!</span>
+                </div>
+
+
+                <button  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="brechnen">
+                    brechnen
+                </button>
+            </form>
+
+            <ul class="demo-list-icon mdl-list" id="fahrenheitlist">
+                <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">device_thermostat</i>
+
+                </span>
+                </li>
+            </ul>
+
+        </div>
+    </main>
+</div>
+
+</body>
+</html>

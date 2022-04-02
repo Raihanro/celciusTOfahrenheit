@@ -1,0 +1,19 @@
+.centered{
+    text-align: center;
+}
+.large{
+    font-size: large;
+}
+.medium{
+    font-size: medium;
+}
+.small{
+    font-size: small;
+color: dodgerblue;
+}
+.page-content{
+    padding: 50px 200px;
+}
+.demo-list-icon {
+    width: 300px;
+}
